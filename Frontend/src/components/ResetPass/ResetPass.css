@@ -1,0 +1,210 @@
+.resetPass {
+    display: flex;
+    
+}
+
+.first-half {
+    max-width: 50%;
+}
+
+.second-half {
+    max-width: 50%;
+}
+
+.resetPass-img {
+    /* 20602934_6300829 1 */
+    width: 549.22px;
+    height: 541.1px;
+    margin-left: 120px;
+    margin-top: 207px;
+}
+
+.logo-heading {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 103px;
+    max-width: 50%;
+}
+
+.logo {
+    width: 59.38px;
+    height: 49px;
+}
+
+.heading {
+    margin-left: 20.42px;
+    margin-top: 5.27px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.resetpass-container {
+    max-width: 50%;
+    width: 594px;
+    height: 684px;
+    margin-top: 120px;
+    margin-left: 103px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.form {
+    margin-top: 10px;
+}
+
+.resetpass-container h1 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 12.52px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
+}
+
+.resetpass-container p {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.64px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: rgba(135, 138, 153, 1);
+    width: 641px;
+    margin-top: 20px;
+
+}
+
+
+.email {
+    /* Email */
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.17000000178813934px;
+    text-align: left;
+    margin-top: 30px;
+
+}
+
+.input-3 {
+    box-sizing: border-box;
+    width: 600px;
+    height: 48px;
+    background: #EFF4FB;
+    border: 1px solid #DDE4F0;
+    border-radius: 4px;
+    margin-top: 10px;
+
+}
+
+
+
+
+.resetpass-button {
+    width: 600px;
+    padding: 10px;
+    background-color: rgba(117, 57, 255, 1);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+
+.resetpass-button:hover {
+    background-color: rgb(134, 82, 255);
+}
+
+.login-text {
+    margin-top: 15px;
+    width: 400px;
+    margin-left: 140px;
+    padding-bottom: 50px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.68px;
+    text-align: left;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+}
+
+.login-text Link {
+    color: #6c63ff;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.68px;
+    text-align: left;
+    letter-spacing: 0.25px;
+}
+
+.login-text Link:hover {
+    text-decoration: underline;
+}
+
+.input-3::placeholder {
+    /* Cameron */
+
+    padding-left: 10px;
+
+    /* body/medium/regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+
+    color: #98A2B3;
+
+
+}
+.features-img {
+    position: absolute;
+    width: 552.33px;
+    height: 410.99px;
+    left: 742.5px;
+    top: 165.01px;
+  }
+  
+  .device-img {
+    position: absolute;
+    left: 71.37%;
+    right: 13.82%;
+    top: 30.8%;
+    bottom: 32%;
+  }
+  
+  .character-img {
+    position: absolute;
+    left: 60.68%;
+    right: 28.1%;
+    top: 31.81%;
+    bottom: 31.4%;
+    z-index: 2;
+  }
+  
+  .policy-img {
+    position: absolute;
+    left: 64.37%;
+    right: 22.29%;
+    top: 31.11%;
+    bottom: 41.92%;
+    z-index: 1;
+  }
+  .error-message {
+    color: red;                  /* Text color */
+    font-size: 12px;            /* Font size for the error message */
+    margin-top: 2px;            /* Space above the error message */
+    margin-bottom: 10px;        /* Space below the error message */
+    font-family: Poppins;       /* Font family */
+}

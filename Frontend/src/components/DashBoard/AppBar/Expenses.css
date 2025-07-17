@@ -1,0 +1,178 @@
+
+
+/* Button container for Add Expense button */
+.btn-container {
+  width: 20%;
+  margin: 0 16px; /* Adds space from left and right */
+}
+
+/* Main table container */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2%;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Table styling */
+.expense-table {
+  width: 95%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #dde4f0;
+}
+
+.expense-table th {
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Progress bar styling */
+.progress-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+}
+
+.progress-bar .MuiLinearProgress-root {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+.progress-bar .MuiLinearProgress-bar {
+  background-color: #7539ff; /* Matches Ant Design's progress color */
+  transition: width 0.3s ease;
+}
+
+.progress-bar .MuiTypography-root {
+  font-size: 14px;
+  color: #000;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+/* Icon buttons for edit/delete */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.edit-btn {
+  color: #7539ff;
+  font-size: 20px;
+}
+
+.delete-btn {
+  color: #ff5771;
+  font-size: 20px;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-number.active {
+  background-color: #7539ff;
+  color: white;
+}
+
+/* Options container for sort, date picker, and search */
+.custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding: 16px;
+  background-color: #f0f2f5;
+}
+
+.header-left {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  gap: 16px;
+}
+
+.custom-header button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #7539ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-header .MuiFormControl-root {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+.custom-header .react-datepicker-wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.custom-header .react-datepicker__input-container input {
+  height: 40px;
+  width: 220px;
+  padding: 10px;
+  border: 1px solid #dde4f0;
+  border-radius: 4px;
+}
+
+.custom-header .MuiTextField-root {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search-box {
+  width: 250px;
+}
+
+.search-box .MuiInputBase-root {
+  height: 40px;
+}
+
+.search-box .MuiOutlinedInput-input {
+  padding: 10px;
+}
+
+/* Table row styling */
+.expense-table tr {
+  height: 70px;
+}
+
+/* Custom footer */
+.custom-footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #667085;
+  width: 95%;
+  background-color: white;
+}

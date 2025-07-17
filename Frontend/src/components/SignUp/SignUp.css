@@ -1,0 +1,350 @@
+.signUp {
+    display: flex;
+    
+}
+
+.first-half {
+    max-width: 50%;
+}
+
+.second-half {
+    max-width: 50%;
+}
+
+.signUp-img {
+    /* 20602934_6300829 1 */
+    width: 550px;
+    height: 569px;
+    margin-left: 120px;
+    margin-top: 207px;
+}
+
+.logo-heading {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 103px;
+    max-width: 50%;
+}
+
+.logo {
+    width: 59.38px;
+    height: 49px;
+}
+
+.heading {
+    margin-left: 20.42px;
+    margin-top: 5.27px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.signup-container {
+    max-width: 50%;
+    width: 594px;
+    height: 684px;
+    margin-top: 60px;
+    margin-left: 103px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.form {
+    margin-top: 10px;
+}
+
+.signup-container h1 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 12.52px;
+    letter-spacing: 0.25px;
+    text-align: left;
+
+}
+
+.signup-container p {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.64px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: rgba(135, 138, 153, 1);
+    width: 341px;
+    margin-top: 20px;
+
+}
+
+.first-name {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.17000000178813934px;
+    text-align: left;
+    margin-top: 30px;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.input-1 {
+    box-sizing: border-box;
+    width: 293px;
+    height: 48px;
+    background: #EFF4FB;
+    border: 1px solid #DDE4F0;
+    border-radius: 4px;
+    margin-top: 10px;
+
+    /* Enhancements */
+    padding-left: 15px; /* Gap at the start of the input */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.last-name {
+    /* Last Name */
+
+    width: 76px;
+    height: 24px;
+    margin-left: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.17px;
+    margin-top: 30px;
+
+    color: #2B2B2B;
+
+
+}
+
+.input-1-2-container {
+    display: flex;
+    gap: 10px; /* Space between the inputs */
+}
+
+.input-2 {
+    box-sizing: border-box;
+    width: 293px;
+    height: 48px;
+    background: #EFF4FB;
+    border: 1px solid #DDE4F0;
+    border-radius: 4px;
+    margin-top: 10px;
+
+    /* Enhancements */
+    padding-left: 15px; /* Gap at the start of the input */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.email {
+    /* Email */
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.17000000178813934px;
+    text-align: left;
+
+}
+
+.input-3 {
+    box-sizing: border-box;
+    width: 600px;
+    height: 48px;
+    background: #EFF4FB;
+    border: 1px solid #DDE4F0;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.password {
+    /* Password */
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.17000000178813934px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.input-4 {
+    box-sizing: border-box;
+    width: 600px;
+    height: 48px;
+    background: #EFF4FB;
+    border: 1px solid #DDE4F0;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.confirm-password {
+    /* Confirm Password */
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.17000000178813934px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.input-5 {
+  box-sizing: border-box;
+    width: 600px;              /* Reduced width */
+    height: 48px;
+    background: #EFF4FB;
+    border: 1px solid #DDE4F0;
+    border-radius: 4px;
+    margin-top: 10px;
+
+    /* Enhancements */
+    padding-left: 15px;        /* Space at the beginning of input */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.budget-limit {
+    /* Budget Limit */
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.17000000178813934px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.input-6 {
+  box-sizing: border-box;
+    width: 600px;              /* Reduced width */
+    height: 48px;
+    background: #EFF4FB;
+    border: 1px solid #DDE4F0;
+    border-radius: 4px;
+    margin-top: 10px;
+
+    /* Enhancements */
+    padding-left: 15px;        /* Space at the beginning of input */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-button {
+    width: 600px;
+    padding: 10px;
+    background-color: rgba(117, 57, 255, 1);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+
+.signup-button:hover {
+    background-color: rgb(134, 82, 255);
+}
+
+.login-text {
+    margin-top: 15px;
+    width: 400px;
+    margin-left: 180px;
+    padding-bottom: 50px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.68px;
+    text-align: left;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+}
+
+.login-text Link {
+    color: #6c63ff;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.68px;
+    text-align: left;
+    letter-spacing: 0.25px;
+}
+
+.login-text Link:hover {
+    text-decoration: underline;
+}
+
+.icon-01-su {
+    position: absolute;
+    left: 49%;
+    top: 70%;
+    bottom: 55.19%;
+    opacity: 0.5;
+
+}
+
+.icon-02-su {
+    position: absolute;
+    left: 49%;
+    top: 85%;
+    bottom: 55.19%;
+    opacity: 0.5;
+}
+
+.icon-03-su {
+    position: absolute;
+    left: 49%;
+    top: 100%;
+    bottom: 55.19%;
+    opacity: 0.5;
+}
+
+.input-1::placeholder,
+.input-2::placeholder,
+.input-3::placeholder,
+.input-4::placeholder,
+.input-5::placeholder,
+.input-6::placeholder {
+    /* Cameron */
+
+    padding-left: 10px;
+
+    /* body/medium/regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+
+    color: #98A2B3;
+
+
+}

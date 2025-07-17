@@ -1,0 +1,165 @@
+/* Top section with title and button */
+.users-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 2%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid #dde4f0;
+}
+
+/* Button container for Add User button */
+.btn-container {
+  width: 12%;
+  margin: 0 16px; /* Adds space from left and right */
+}
+
+/* Main table container */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2%;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Table styling */
+.user-table {
+  width: 95%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #dde4f0;
+}
+
+.user-table th {
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Icon buttons for edit/delete */
+.edit-btn {
+  color: #7539ff;
+  font-size: 20px;
+}
+
+.delete-btn {
+  color: #ff5771;
+  font-size: 20px;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-number.active {
+  background-color: #7539ff;
+  color: white;
+}
+
+/* Custom header for table */
+.custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding: 16px;
+  background-color: #f0f2f5;
+}
+
+.header-left {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  gap: 16px;
+}
+
+.custom-header button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #7539ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-header .MuiFormControl-root {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 40px;
+  min-width: 150px;
+}
+
+.custom-header .MuiInputLabel-root {
+  font-size: 16px;
+  color: #333;
+}
+
+.custom-header .MuiSelect-root {
+  height: 40px;
+}
+
+.custom-header .MuiTextField-root {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+
+.search-box {
+  width: 220px;
+}
+
+.search-box .MuiInputBase-root {
+  height: 40px;
+}
+
+.search-box .MuiOutlinedInput-input {
+  padding: 10px;
+}
+
+/* Table row styling */
+.user-table tr {
+  height: 70px;
+}
+
+/* Custom footer */
+.custom-footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #667085;
+  width: 95%;
+  background-color: white;
+}
+
+/* Sort button styling */
+.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort-bg {
+  background-color: #E1E8F2;
+  border: 1px solid #DDE4F0;
+  border-radius: 4px 0px 0px 4px;
+  height: 100%;
+}

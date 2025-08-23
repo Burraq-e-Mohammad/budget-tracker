@@ -6,7 +6,7 @@ require('dotenv').config();
 
 
 // Directly specifying MongoDB URI and port
-const MONGODB_URI = 'mongodb://bq:1234@cluster0-shard-00-00.2h0lv.mongodb.net:27017,cluster0-shard-00-01.2h0lv.mongodb.net:27017,cluster0-shard-00-02.2h0lv.mongodb.net:27017/budget-tracker?ssl=true&replicaSet=atlas-feimko-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = 'mongodb+srv://bq:9ts0xwZiySYM4yAs@cluster0.2h0lv.mongodb.net/budget-tracker?retryWrites=true&w=majority&appName=Cluster0';
 const PORT = 4000;
 
 // Import API routes

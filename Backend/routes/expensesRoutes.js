@@ -3,7 +3,7 @@ const User = require('../models/users');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
 
-const secretKey = 'bc1e06add01f10cafe660f022492f1d144c9a0c77725cd846843208d70ed4e63'; // Ensure this matches your JWT secret key
+const secretKey = process.env.JWT_SECRET; // Ensure this matches your JWT secret key
 
 router.post('/add-budget', async (req, res) => {
   try {

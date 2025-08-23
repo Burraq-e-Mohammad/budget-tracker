@@ -227,14 +227,6 @@ const Users = () => {
 
   return (
     <div className="table-container">
-      <div className="users-top">
-        <h3>Users</h3>
-        <div className="btn-container">
-          <Button variant="contained" onClick={handleOpenAddDialog}>
-            Add User
-          </Button>
-        </div>
-      </div>
       <div className="custom-header">
         <div className="header-left">Users</div>
         <div className="header-right">

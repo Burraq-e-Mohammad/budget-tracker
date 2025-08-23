@@ -6,8 +6,9 @@ require('dotenv').config();
 
 
 // Directly specifying MongoDB URI and port
-const MONGODB_URI = 'mongodb+srv://bq:9ts0xwZiySYM4yAs@cluster0.2h0lv.mongodb.net/budget-tracker?retryWrites=true&w=majority&appName=Cluster0';
-const PORT = 4000;
+// Load from environment variables
+const MONGODB_URI = process.env.MONGODB_URI;
+const PORT = process.env.PORT || 4000;
 
 // Import API routes
 const userRoutes = require('./routes/userRoutes');

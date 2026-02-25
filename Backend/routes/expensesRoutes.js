@@ -1,27 +1,13 @@
 const express = require('express');
 const User = require('../models/users');
-const jwt = require('jsonwebtoken');
+const { randomUUID } = require('crypto');
 const router = express.Router();
-
-const secretKey = process.env.JWT_SECRET; // Ensure this matches your JWT secret key
 
 router.post('/add-budget', async (req, res) => {
   try {
     const { date, transactionName, price } = req.body; // Ensure `price` is used instead of `amount`
-
-    // Extract token from the request header
-    const token = req.header('Authorization')?.replace('Bearer ', '').trim();
-
-    if (!token) {
-      return res.status(401).json({ message: 'No token, authorization denied' });
-    }
-
-    // Verify the token and extract user ID
-    const decoded = jwt.verify(token, secretKey);
-    const userId = decoded.id;
-
-    // Find the user by ID
-    let user = await User.findById(userId);
+    // For simplicity, attach expenses to the first user in the store
+    let user = await User.first();
 
     if (!user) {
       return res.status(400).json({ message: 'User not found' });
@@ -29,6 +15,7 @@ router.post('/add-budget', async (req, res) => {
 
     // Create a new budget entry
     const budgetEntry = {
+      _id: randomUUID(),
       date,
       transactionName,
       price, // Use `price` instead of `amount`
@@ -64,19 +51,8 @@ router.post('/add-budget', async (req, res) => {
 // GET /api/expenses/budget-entries
 router.get('/budget-entries', async (req, res) => {
   try {
-    // Extract token from the request header
-    const token = req.header('Authorization')?.replace('Bearer ', '').trim();
-
-    if (!token) {
-      return res.status(401).json({ message: 'No token, authorization denied' });
-    }
-
-    // Verify the token and extract user ID
-    const decoded = jwt.verify(token, secretKey);
-    const userId = decoded.id;
-
-    // Find the user by ID
-    const user = await User.findById(userId);
+    // Return budget entries for the first user
+    const user = await User.first();
 
     if (!user) {
       return res.status(400).json({ message: 'User not found' });
@@ -101,35 +77,27 @@ router.put('/update-budget/:id', async (req, res) => {
     const { id } = req.params;
     const { date, transactionName, price } = req.body;
 
-    // Extract token from the request header
-    const token = req.header('Authorization')?.replace('Bearer ', '').trim();
-
-    if (!token) {
-      return res.status(401).json({ message: 'No token, authorization denied' });
-    }
-
-    // Verify the token and extract user ID
-    const decoded = jwt.verify(token, secretKey);
-    const userId = decoded.id;
-
-    // Find the user by ID
-    const user = await User.findById(userId);
+    // Use the first user for budgeting
+    const user = await User.first();
 
     if (!user) {
       return res.status(400).json({ message: 'User not found' });
     }
 
     // Find the budget entry by ID
-    const budgetEntry = user.budgetEntries.id(id);
+    const index = user.budgetEntries.findIndex((entry) => entry._id === id);
 
-    if (!budgetEntry) {
+    if (index === -1) {
       return res.status(404).json({ message: 'Budget entry not found' });
     }
 
     // Update the budget entry
-    budgetEntry.date = date;
-    budgetEntry.transactionName = transactionName;
-    budgetEntry.price = price;
+    user.budgetEntries[index] = {
+      ...user.budgetEntries[index],
+      date,
+      transactionName,
+      price,
+    };
 
     await user.save();
 
@@ -150,20 +118,8 @@ router.put('/update-budget/:id', async (req, res) => {
 router.delete('/delete-budget/:id', async (req, res) => {
   try {
     const { id } = req.params;
-
-    // Extract token from the request header
-    const token = req.header('Authorization')?.replace('Bearer ', '').trim();
-
-    if (!token) {
-      return res.status(401).json({ message: 'No token, authorization denied' });
-    }
-
-    // Verify the token and extract user ID
-    const decoded = jwt.verify(token, secretKey);
-    const userId = decoded.id;
-
-    // Find the user by ID
-    const user = await User.findById(userId);
+    // Use the first user for budgeting
+    const user = await User.first();
 
     if (!user) {
       return res.status(400).json({ message: 'User not found' });

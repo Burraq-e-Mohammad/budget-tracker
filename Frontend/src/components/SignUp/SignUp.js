@@ -41,7 +41,7 @@ const SignUp = () => {
     setLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:4000/api/users/SignUp', {
+      const response = await axios.post('/api/users/SignUp', {
         firstName,
         lastName,
         email,

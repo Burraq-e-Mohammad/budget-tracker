@@ -47,7 +47,7 @@ const Users = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:4000/api/users", {
+      const response = await axios.get("/api/users", {
         headers: { "Content-Type": "application/json" },
         timeout: 5000, // Set timeout to 5 seconds
       });
@@ -121,7 +121,7 @@ const Users = () => {
         throw new Error("Invalid phone number format");
       }
 
-      await axios.post("http://localhost:4000/api/users", newUser, {
+      await axios.post("/api/users", newUser, {
         headers: { "Content-Type": "application/json" },
         timeout: 5000,
       });
@@ -156,7 +156,7 @@ const Users = () => {
         throw new Error("Invalid phone number format");
       }
 
-      await axios.put(`http://localhost:4000/api/users/${selectedUserId}`, newUser, {
+      await axios.put(`/api/users/${selectedUserId}`, newUser, {
         headers: { "Content-Type": "application/json" },
         timeout: 5000,
       });
@@ -177,7 +177,7 @@ const Users = () => {
 
   const handleConfirmDelete = async () => {
     try {
-      await axios.delete(`http://localhost:4000/api/users/${selectedUserId}`, {
+      await axios.delete(`/api/users/${selectedUserId}`, {
         headers: { "Content-Type": "application/json" },
         timeout: 5000,
       });

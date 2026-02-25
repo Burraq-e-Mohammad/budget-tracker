@@ -67,7 +67,7 @@ router.post('/SignIn', async (req, res) => {
 // GET /api/users
 router.get('/', async (req, res) => {
   try {
-    const users = await User.find().select('-password');
+    const users = await User.find();
     res.status(200).json(users);
   } catch (error) {
     console.error('Get Users Error:', error);
@@ -85,7 +85,14 @@ router.post('/', async (req, res) => {
 
     res.status(201).json({ 
       message: 'User added successfully', 
-      user: { ...newUser.toObject(), password: undefined }
+      user: {
+        _id: newUser._id,
+        firstName: newUser.firstName,
+        lastName: newUser.lastName,
+        email: newUser.email,
+        number: newUser.number,
+        role: newUser.role,
+      }
     });
   } catch (error) {
     console.error('Add User Error:', error);
@@ -103,7 +110,7 @@ router.put('/:id', async (req, res) => {
       id,
       { firstName, lastName, email, number, role },
       { new: true }
-    ).select('-password');
+    );
 
     if (!updatedUser) return res.status(404).json({ message: 'User not found' });
 
@@ -118,7 +125,7 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const deletedUser = await User.findByIdAndDelete(id).select('-password');
+    const deletedUser = await User.findByIdAndDelete(id);
 
     if (!deletedUser) return res.status(404).json({ message: 'User not found' });
 

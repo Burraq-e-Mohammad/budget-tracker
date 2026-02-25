@@ -1,0 +1,153 @@
+[
+  {
+    "_id": "7ddb2f18-61b6-46ca-bf5f-e3eddc8dc2b8",
+    "firstName": "Alice",
+    "lastName": "Khan",
+    "email": "alice@example.com",
+    "password": "$2a$10$9/8PMR3BNSyWuv0GlQ1Zp.kcKP4fngaJocXF3C/DC3LvN2y43ICsy",
+    "amount": 100000,
+    "budgetEntries": [
+      {
+        "_id": "0fc62aec-dcec-4b43-8189-0b31e993b3aa",
+        "date": "2026-02-01",
+        "transactionName": "Groceries",
+        "price": 5500
+      },
+      {
+        "_id": "a522651e-cc5c-4bdd-a847-f9f80b62f3c8",
+        "date": "2026-02-03",
+        "transactionName": "Electricity Bill",
+        "price": 4200
+      },
+      {
+        "_id": "33291140-d6fe-4283-bd8a-bc6c81af3832",
+        "date": "2026-02-05",
+        "transactionName": "Internet",
+        "price": 2500
+      },
+      {
+        "_id": "67f394bc-a14a-46b1-8b9e-f80c55199f2b",
+        "date": "2026-02-07",
+        "transactionName": "Fuel",
+        "price": 6000
+      },
+      {
+        "_id": "72c194b4-8edc-463d-8349-1791d9ac037a",
+        "date": "2026-02-09",
+        "transactionName": "Dining Out",
+        "price": 3200
+      },
+      {
+        "_id": "e332f067-f8f1-4ff0-a9da-538b48cac849",
+        "date": "2026-02-11",
+        "transactionName": "Clothing",
+        "price": 7800
+      },
+      {
+        "_id": "c43aef29-53e8-4fce-99f8-ecf7417a76c0",
+        "date": "2026-02-13",
+        "transactionName": "Gym Membership",
+        "price": 3000
+      },
+      {
+        "_id": "f63bd32d-1c4c-4d2c-aaca-30f158463341",
+        "date": "2026-02-15",
+        "transactionName": "Streaming Subscriptions",
+        "price": 1800
+      },
+      {
+        "_id": "b52d06b8-caeb-4c97-bdad-ec42e94bc2fe",
+        "date": "2026-02-17",
+        "transactionName": "Mobile Recharge",
+        "price": 1500
+      },
+      {
+        "_id": "7cc1bf15-8cf3-4a63-94b5-657ab382cdba",
+        "date": "2026-02-19",
+        "transactionName": "Medical",
+        "price": 9000
+      }
+    ]
+  },
+  {
+    "_id": "66bbaffa-f088-4e45-b10c-529b87f7198a",
+    "firstName": "Bob",
+    "lastName": "Ahmed",
+    "email": "bob@example.com",
+    "password": "$2a$10$ezfkKXa9BagSu52k6oJ0YeOUQuz7osFk/uvRuJ6g6WWKSDU.V1.4O",
+    "amount": 120000,
+    "budgetEntries": []
+  },
+  {
+    "_id": "c4456e6a-405e-41eb-a3b7-adc83a745a7e",
+    "firstName": "Charlie",
+    "lastName": "Iqbal",
+    "email": "charlie@example.com",
+    "password": "$2a$10$/3id6637kkRUB0Jv9LkFR.O1mAd5VQRpuJQlcyYnTkmTorCjJpLNu",
+    "amount": 80000,
+    "budgetEntries": []
+  },
+  {
+    "_id": "b556bac1-e363-4944-b88c-0ee22de59e7f",
+    "firstName": "Diana",
+    "lastName": "Raza",
+    "email": "diana@example.com",
+    "password": "$2a$10$IfOSA5qbXCnj32IzC3IRXemb7U5xtXp0MC/xFS9HIR.7ajT1t90ey",
+    "amount": 90000,
+    "budgetEntries": []
+  },
+  {
+    "_id": "d1a84f20-893e-47c4-af2a-d9879e9f52a8",
+    "firstName": "Ethan",
+    "lastName": "Ali",
+    "email": "ethan@example.com",
+    "password": "$2a$10$ohZrsoJzmjhG71aSzjannuBEjPLJ0Vc4OTDLhikJ4zkeNSyzt3Lje",
+    "amount": 110000,
+    "budgetEntries": []
+  },
+  {
+    "_id": "94ec6ad5-580e-4e50-a8ca-1a1f79d996c2",
+    "firstName": "Fatima",
+    "lastName": "Noor",
+    "email": "fatima@example.com",
+    "password": "$2a$10$3oAQPvmJXjGiqgOwykaQRuDQDKtRCVNB9lv1E8b8K/XdvRja3dneG",
+    "amount": 95000,
+    "budgetEntries": []
+  },
+  {
+    "_id": "6ab665f9-523f-48fd-8ef0-bdfb6ea6d6d7",
+    "firstName": "George",
+    "lastName": "Shah",
+    "email": "george@example.com",
+    "password": "$2a$10$K4jayU1ghafqxcO3FMQMiem5l3GTwXxsTjW1t.Tb7Mba6F6qrSlOS",
+    "amount": 105000,
+    "budgetEntries": []
+  },
+  {
+    "_id": "3d5aa9b8-d304-4edd-9a7e-15f35cea4a1f",
+    "firstName": "Hina",
+    "lastName": "Zafar",
+    "email": "hina@example.com",
+    "password": "$2a$10$/KZC62yFnl/6aspX/8z/QerV3ZTOENfnxhq8Ao0BDW.1hgzCjlGSe",
+    "amount": 98000,
+    "budgetEntries": []
+  },
+  {
+    "_id": "07e0a692-983f-4568-974b-286ecc4ea6d4",
+    "firstName": "Imran",
+    "lastName": "Malik",
+    "email": "imran@example.com",
+    "password": "$2a$10$zb0jSmTKqX0fRX29G1ehduD5Ekh9akmq1OSvkKJgy4qKUiQnIDZtG",
+    "amount": 102000,
+    "budgetEntries": []
+  },
+  {
+    "_id": "65f4a14c-a863-4b79-8446-601cf87885bd",
+    "firstName": "Javeria",
+    "lastName": "Ansari",
+    "email": "javeria@example.com",
+    "password": "$2a$10$YJVJMn74Pp5jYnbXIW/3POomILLhLdzFsP468Pu73C5g37SVAC7dC",
+    "amount": 115000,
+    "budgetEntries": []
+  }
+]

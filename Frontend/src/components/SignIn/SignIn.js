@@ -34,7 +34,7 @@ const SignIn = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:4000/api/users/SignIn', {
+      const response = await axios.post('/api/users/SignIn', {
         email,
         password,
       });
@@ -44,7 +44,7 @@ const SignIn = () => {
       if (token) {
         localStorage.setItem('token', token);
         setErrors({});
-        navigate('/dashboard');
+        navigate('/DashBoard');
       } else {
         setErrors({ form: '*Invalid email or password' });
       }
